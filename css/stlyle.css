@@ -1,207 +1,211 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 15px;
 }
 
 a {
-    display: block;
-    width: 100%;
-    max-width: 430px;
-    margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .map-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    transform: translate(-50%, -50%);
-    height: 250px;
-    z-index: 10;
-    pointer-events: none;
-    overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  z-index: 10;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 a.image-with-map {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 430px;
-    transform: scale(0.9);
-    transform-origin: top center;
-    /* This negative margin compensates for the space created by the scale transform,
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  transform: scale(0.9);
+  transform-origin: top center;
+  /* This negative margin compensates for the space created by the scale transform,
        pulling the next element up to remove the white gap. */
-    margin-bottom: -10%;
+  margin-bottom: -10%;
 }
 a.image-with-video {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 430px;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 430px;
 }
 
 /* Overlay buttons on other images */
 a.image-with-overlay {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 430px;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 430px;
 }
 
 /* Image 8 - no special margin needed */
 
 .video-container {
-    position: absolute;
-    top: 1630px;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    height: 350px;
-    z-index: 20;
-    pointer-events: auto;
+  position: absolute;
+  top: 1630px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  height: 350px;
+  z-index: 20;
+  pointer-events: auto;
 }
 
 .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
 }
 
 /* Overlay buttons on top of 2.png */
 /* overlay button images */
 .overlay-button {
-    width: 400px; /* desired size */
-    height: auto;
-    display: block;
-    cursor: pointer;
+  max-width: 400px; /* desired size */
+  width: 100vw;
+  height: auto;
+  display: block;
+  cursor: pointer;
 }
 
 /* container that centers the two buttons and stacks them vertically */
 .overlay-buttons {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 97px; /* placeholder offset from bottom of image */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px; /* space between top and bottom button */
-    z-index: 30;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 97px; /* placeholder offset from bottom of image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* space between top and bottom button */
+  z-index: 30;
 }
 
 /* Make overlay buttons a bit smaller on very small screens */
-@media (max-width: 480px) {
-    .overlay-button {
-        width: 400px;
-    }
+@media (max-width: 430px) {
+  .overlay-buttons {
+    bottom: calc(100px - 5vw) !important;
+  }
+  a[data-image="13"] .overlay-buttons-2 {
+    top: calc(265px - 2vw) !important;
+  }
 }
 
 /* Remove the scale on small devices so the map/image shows at full size */
 @media (max-width: 480px) {
-    a.image-with-map {
-        transform: none;
-        margin-bottom: 0;
-    }
+  a.image-with-map {
+    transform: none;
+    margin-bottom: 0;
+  }
 }
 
 /* Placeholder absolute positions for buttons on `2.png` (adjust later) */
 .image-with-video .overlay-button {
-    /* place at fixed pixel offset from the bottom of the image (placeholder) */
-    bottom: 30px;
-    top: auto;
+  /* place at fixed pixel offset from the bottom of the image (placeholder) */
+  bottom: 30px;
+  top: auto;
 }
 
 .image-with-video .overlay-button.button-line {
-    right: 30px;
-    left: auto;
+  right: 30px;
+  left: auto;
 }
 
 .image-with-video .overlay-button.button-call {
-    left: 30px;
-    right: auto;
+  left: 30px;
+  right: auto;
 }
 
 /* Individual image overlay button positioning (adjust bottom offset per image) */
 /* Image 5 */
 a[data-image="5"] .overlay-buttons {
-    bottom: 87px;
+  bottom: 87px;
 }
 
 /* Image 6 */
 a[data-image="6"] .overlay-buttons {
-    bottom: 88px;
+  bottom: 88px;
 }
 
 /* Image 8 */
 a[data-image="8"] .overlay-buttons {
-    bottom: 86px;
+  bottom: 86px;
 }
 
 /* Image 9 */
 a[data-image="9"] .overlay-buttons {
-    bottom: 84px;
+  bottom: 84px;
 }
 
 /* Image 10 */
 a[data-image="10"] .overlay-buttons {
-    bottom: 83px;
+  bottom: 83px;
 }
 
 /* Image 12 */
 a[data-image="12"] .overlay-buttons {
-    bottom: 84px;
+  bottom: 84px;
 }
 
 /* Image 13 */
 a[data-image="13"] .overlay-buttons {
-    bottom: 84px;
+  bottom: 84px;
 }
 
 /* Image 13 - Second button group */
 a[data-image="13"] .overlay-buttons-2 {
-    bottom: auto;
-    top: 282px;
+  bottom: auto;
+  top: 282px;
 }
 
 a[data-image="13"] .overlay-buttons-2 .overlay-button {
-    width: 350px;
+  width: 90vw;
 }
 
 /* Image 14 */
 a[data-image="14"] .overlay-buttons {
-    bottom: 98px;
+  bottom: 98px;
 }
 
 /* Image 15 */
 a[data-image="15"] .overlay-buttons {
-    bottom: 92px;
+  bottom: 92px;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .map-container {
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);;
-    height: 250px;
-    z-index: 10;
-    pointer-events: none;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  height: 250px;
+  z-index: 10;
+  pointer-events: none;
 }
