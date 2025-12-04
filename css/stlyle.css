@@ -130,7 +130,7 @@ a.image-with-overlay {
 /* Buttons for image 5 - adjust independently */
 .area-line-5 {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);;
   bottom: 1.5%;
   width: 90%;
   height: 9%;
