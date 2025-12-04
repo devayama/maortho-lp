@@ -101,6 +101,9 @@ a.image-with-overlay {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  /* Debug mode: red rectangle border */
+  border: 3px solid red;
+  box-shadow: inset 0 0 0 2px rgba(255, 0, 0, 0.3);
 }
 
 /* LINE button area - using percentages to scale with image */
@@ -346,22 +349,22 @@ a.image-with-overlay {
 }
 
 /* Make overlay buttons a bit smaller on very small screens */
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
   .overlay-buttons {
     bottom: calc(100px - 5vw) !important;
   }
   a[data-image="13"] .overlay-buttons-2 {
     top: calc(265px - 2vw) !important;
   }
-}
+} */
 
 /* Remove the scale on small devices so the map/image shows at full size */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   a.image-with-map {
     transform: none;
     margin-bottom: 0;
   }
-}
+} */
 
 /* Placeholder absolute positions for buttons on `2.png` (adjust later) */
 .image-with-video .overlay-button {
@@ -432,9 +435,9 @@ a[data-image="14"] .overlay-buttons {
 }
 
 /* Image 15 */
-a[data-image="15"] .overlay-buttons {
+/* a[data-image="15"] .overlay-buttons {
   bottom: 92px;
-}
+} */
 
 img {
   width: 100%;
