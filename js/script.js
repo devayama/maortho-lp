@@ -27,19 +27,26 @@
                 // Get custom location name from parent anchor
                 var parentAnchor = this.closest('a');
                 var locationName = parentAnchor ? parentAnchor.getAttribute('data-location') : null;
+                var sectionName = this.getAttribute('data-section');
                 
                 // Define event details for Google Analytics
                 var eventName = '';
                 var eventCategory = 'button_click';
                 var eventLabel = '';
                 
+                // Build label with section if available
+                var labelPrefix = locationName;
+                if(sectionName){
+                    labelPrefix = locationName + '_' + sectionName;
+                }
+                
                 // Map clickable IDs to specific button events
                 if(action === 'line'){
                     eventName = 'line_button_click';
-                    eventLabel = locationName ? locationName + '_line' : 'line_button_' + clickableId;
+                    eventLabel = labelPrefix ? labelPrefix + '_line' : 'line_button_' + clickableId;
                 } else if(action === 'call'){
                     eventName = 'call_button_click';
-                    eventLabel = locationName ? locationName + '_call' : 'call_button_' + clickableId;
+                    eventLabel = labelPrefix ? labelPrefix + '_call' : 'call_button_' + clickableId;
                 }
                 
                 // Console log for debugging
@@ -63,10 +70,10 @@
                 
                 // Execute action
                 if(action === 'line'){
-                    var lineUrl = 'https://liff.line.me/2007384640-yj8nm8g3/landing?follow=%40931ezxtl&lp=O70xEW&liff_id=2007384640-yj8nm8g3';
+                    var lineUrl = 'https://lin.ee/bX6wERC';
                     window.open(lineUrl, '_blank');
                 } else if(action === 'call'){
-                    var phoneNumber = '+810362625779';
+                    var phoneNumber = '0362625779';
                     callNumber(phoneNumber);
                 }
             });
