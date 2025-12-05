@@ -101,9 +101,12 @@ a.image-with-overlay {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  width: 90%; 
+  height: auto;
+  aspect-ratio: 5.4 / 1;
   /* Debug mode: red rectangle border */
-  border: 3px solid red;
-  box-shadow: inset 0 0 0 2px rgba(255, 0, 0, 0.3);
+  /* border: 3px solid red;
+  box-shadow: inset 0 0 0 2px rgba(255, 0, 0, 0.3); */
 }
 
 /* LINE button area - using percentages to scale with image */
@@ -111,9 +114,8 @@ a.image-with-overlay {
 .area-line-2 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 17%;
+  bottom: 17.5%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
@@ -123,7 +125,6 @@ a.image-with-overlay {
   transform: translateX(-50%);
   bottom: 9.5%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -131,18 +132,16 @@ a.image-with-overlay {
 .area-line-5 {
   left: 50%;
   transform: translateX(-50%);;
-  bottom: 1.5%;
+  bottom: 4.9%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-5 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -0.6%;
+  bottom: 2.5%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -150,18 +149,16 @@ a.image-with-overlay {
 .area-line-6 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -0.8%;
+  bottom: 3%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-6 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -2.1%;
+  bottom: 1.5%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -200,18 +197,16 @@ a.image-with-overlay {
 .area-line-8 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5%;
+  bottom: 7.6%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-8 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 1.5%;
+  bottom: 3.8%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -219,18 +214,16 @@ a.image-with-overlay {
 .area-line-9 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 6.8%;
+  bottom: 9%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-9 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 2.7%;
+  bottom: 4.4%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -238,18 +231,16 @@ a.image-with-overlay {
 .area-line-10 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -1.6%;
+  bottom: 2.3%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-10 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -2.7%;
+  bottom: 1.1%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -257,18 +248,16 @@ a.image-with-overlay {
 .area-line-12 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 4.9%;
+  bottom: 7.5%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-12 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 1.5%;
+  bottom: 3.7%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -276,18 +265,16 @@ a.image-with-overlay {
 .area-line-13-top {
   left: 50%;
   transform: translateX(-50%);
-  top: 12%;
+  top: 14.5%;
   width: 95%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE S.png');
 }
 
 .area-call-13-top {
   left: 50%;
   transform: translateX(-50%);
-  top: 15.5%;
+  top: 18.5%;
   width: 95%;
-  height: 9%;
   background-image: url('../assets/button/Button Call S.png');
 }
 
@@ -295,18 +282,16 @@ a.image-with-overlay {
 .area-line-13-bottom {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5.5%;
+  bottom: 8%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-13-bottom {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 1.9%;
+  bottom: 3.9%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -314,18 +299,16 @@ a.image-with-overlay {
 .area-line-14 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 3.3%;
+  bottom: 6.3%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-14 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0.6%;
+  bottom: 3.4%;
   width: 90%;
-  height: 9%;
   background-image: url('../assets/button/Button Call N.png');
 }
 
@@ -333,18 +316,18 @@ a.image-with-overlay {
 .area-line-15 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -0.5%;
+  bottom: 3.2%;
   width: 90%;
-  height: 9%;
+  
   background-image: url('../assets/button/Button LINE N.png');
 }
 
 .area-call-15 {
   left: 50%;
   transform: translateX(-50%);
-  bottom: -1.9%;
+  bottom: 1.65%;
   width: 90%;
-  height: 9%;
+  
   background-image: url('../assets/button/Button Call N.png');
 }
 
