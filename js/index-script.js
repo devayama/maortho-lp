@@ -99,7 +99,7 @@ const translations = {
 // --- MULTI-LANGUAGE ENGINE ---
 // =========================================
 
-let currentLang = localStorage.getItem('preferredLang') || 'en';
+let currentLang = localStorage.getItem('preferredLang') || 'ja';
 
 function updateLanguage(lang) {
     document.documentElement.lang = lang;
