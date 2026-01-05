@@ -70,7 +70,7 @@
                 
                 // Execute action - Osaka specific
                 if(action === 'line'){
-                    var lineUrl = 'https://lin.ee/vUE1Jsh'; // Update with Osaka LINE URL if different
+                    var lineUrl = 'https://liff.line.me/2007384640-yj8nm8g3/landing?follow=%40931ezxtl&lp=MQMHen&liff_id=2007384640-yj8nm8g3'; // Update with Osaka LINE URL if different
                     window.open(lineUrl, '_blank');
                 } else if(action === 'call'){
                     var phoneNumber = '06-6575-7988'; // Update with Osaka phone number

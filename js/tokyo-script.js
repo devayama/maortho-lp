@@ -70,7 +70,7 @@
                 
                 // Execute action - Tokyo specific
                 if(action === 'line'){
-                    var lineUrl = 'https://lin.ee/bX6wERC';
+                    var lineUrl = 'https://liff.line.me/2007384640-yj8nm8g3/landing?follow=%40931ezxtl&lp=Bh2DlE&liff_id=2007384640-yj8nm8g3';
                     window.open(lineUrl, '_blank');
                 } else if(action === 'call'){
                     var phoneNumber = '03-6262-5779'; // Tokyo phone number

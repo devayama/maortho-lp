@@ -70,7 +70,7 @@
                 
                 // Execute action - Hokkaido specific
                 if(action === 'line'){
-                    var lineUrl = 'https://lin.ee/2Ouz04H'; // Update with Hokkaido LINE URL if different
+                    var lineUrl = 'https://liff.line.me/2007384640-yj8nm8g3/landing?follow=%40931ezxtl&lp=a5F0Cv&liff_id=2007384640-yj8nm8g3'; // Update with Hokkaido LINE URL if different
                     window.open(lineUrl, '_blank');
                 } else if(action === 'call'){
                     var phoneNumber = '011-522-8877'; // Update with Hokkaido phone number

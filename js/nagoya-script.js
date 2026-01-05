@@ -70,7 +70,7 @@
                 
                 // Execute action - Nagoya specific
                 if(action === 'line'){
-                    var lineUrl = 'https://lin.ee/JwFowh2'; // Update with Nagoya LINE URL if different
+                    var lineUrl = 'https://liff.line.me/2007384640-yj8nm8g3/landing?follow=%40931ezxtl&lp=05sYxo&liff_id=2007384640-yj8nm8g3'; // Update with Nagoya LINE URL if different
                     window.open(lineUrl, '_blank');
                 } else if(action === 'call'){
                     var phoneNumber = '052-526-9777'; // Update with Nagoya phone number
