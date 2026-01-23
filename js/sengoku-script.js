@@ -11,7 +11,7 @@ function trackClick(linkName) {
 
 // Define link destinations
 const links = {
-    'reservation': 'https://reserve.dental/web/00ec53-381', // Update with actual reservation URL
+    'reservation': 'https://reserve.dental/web/e205ee-910', // Update with actual reservation URL
     'home': 'https://bunkyo-otonakodomo-dental.com/', // Update with actual home page URL
     'instagram': 'https://www.instagram.com/bunkyo_sengoku_otonakodomo/',
     'line': 'https://lin.ee/RZ7KuRo'
