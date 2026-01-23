@@ -1,11 +1,15 @@
 // Function to track clicks using Google Analytics
 function trackClick(linkName) {
+    console.log('Tracking click:', linkName); // Debug log
     if (typeof gtag !== 'undefined') {
         gtag('event', 'click', {
             'event_category': 'Button',
             'event_label': linkName,
             'value': 1
         });
+        console.log('Event sent to GA4'); // Debug log
+    } else {
+        console.log('gtag not found'); // Debug log
     }
 }
 
