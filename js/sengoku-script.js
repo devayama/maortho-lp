@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const reservationArea = document.querySelector('[data-action="reservation"]');
     if (reservationArea) {
         reservationArea.addEventListener('click', function() {
-            trackClick('Go to Reservation');
+            trackClick('WEB予約ページへ移動');
             window.open(links.reservation, '_blank');
         });
     }
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeArea = document.querySelector('[data-action="home"]');
     if (homeArea) {
         homeArea.addEventListener('click', function() {
-            trackClick('Go to Home Page');
+            trackClick('ホームページへ移動');
             window.open(links.home, '_blank');
         });
     }
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const instagramArea = document.querySelector('[data-action="instagram"]');
     if (instagramArea) {
         instagramArea.addEventListener('click', function() {
-            trackClick('Go to Instagram');
+            trackClick('Instagramへ移動');
             window.open(links.instagram, '_blank');
         });
     }
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const lineArea = document.querySelector('[data-action="line"]');
     if (lineArea) {
         lineArea.addEventListener('click', function() {
-            trackClick('Go to Line');
+            trackClick('LINEへ移動');
             window.open(links.line, '_blank');
         });
     }
