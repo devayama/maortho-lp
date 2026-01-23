@@ -1,10 +1,12 @@
-// Function to track clicks using Google Tag Manager
+// Function to track clicks using Google Analytics
 function trackClick(linkName) {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-        'event': 'linkClick',
-        'linkName': linkName
-    });
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', {
+            'event_category': 'Button',
+            'event_label': linkName,
+            'value': 1
+        });
+    }
 }
 
 // Define link destinations
